@@ -14,15 +14,21 @@ justify-content: space-between;
 padding: 8px;
 border-bottom: 2px solid white ;
 background-color: ${pr => pr.theme.primaryColor};
+color: ${pr => pr.theme.white};
+transition: all 0.2s ease-in-out;
+&:hover{
+  transition: all 0.2 ease-in-out;
+  background-color: ${ pr=> pr.theme.secondaryColor};
+}
 `
 
 export default function Friend({ info, action }) {
   return (
-    <styledFriend className='friend'>
+    <StyledFriend className='friend'>
       {info.name}
       <button onClick={() => action(info.id)}>
         See details
       </button>
-    </styledFriend>
+    </StyledFriend>
   )
 }
