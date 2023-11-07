@@ -1,10 +1,10 @@
 // theme object here
 export default {
     primaryColor: "royalblue",
-    secondaryColor: "crimson",
-    tertiaryColor: "purple",
+    secondaryColor: "peach",
+    tertiaryColor: "mauve",
     black: 'black',
-    white: 'White',
+    white: 'white',
     breakpointMobile: '(max-width: 550px)',
-    
+    breakpointTablet:'(max-width: 768px)',
 }
