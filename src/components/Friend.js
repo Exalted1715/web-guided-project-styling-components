@@ -11,6 +11,9 @@ const StyledFriend = styled.div`
 width: 60%;
 display: flex;
 justify-content: space-between;
+padding: 8px;
+border-bottom: 2px solid white ;
+background-color: ${pr => pr.theme.primaryColor};
 `
 
 export default function Friend({ info, action }) {
